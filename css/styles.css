@@ -1,0 +1,408 @@
+@font-face{font-family:"OpenSans";src:url("fonts/OpenSans/OpenSans-Regular.woff") format("woff");font-weight:normal;font-style:normal;font-display:swap}
+@font-face{font-family:"OpenSans";src:url("fonts/OpenSans/OpenSans-Semibold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"SourceSerifPro";src:url("fonts/SourceSerifPro/SourceSerifPro-Italic.woff") format("woff");font-weight:normal;font-style:italic;font-display:swap}
+@font-face{font-family:"SourceSerifPro";src:url("fonts/SourceSerifPro/SourceSerifPro-SemiBoldItalic.woff") format("woff");font-weight:600;font-style:italic;font-display:swap}
+.landwash-wrapper,
+.landwash-wrapper *,
+.landwash-wrapper *::before,
+.landwash-wrapper *::after {outline:none; box-sizing:border-box; font-family:OpenSans, Arial, sans-serif; font-weight:normal; letter-spacing:0}
+
+.landwash-wrapper {background:#FFFFFF; position:relative; overflow:hidden; width:100%; padding:26px 0 100px 0}
+
+@media (max-width:1219px) {
+    .landwash-wrapper {padding:13px 0 80px 0}
+}
+
+.landwash-container {margin:0 auto; max-width:1220px}
+
+@media (max-width:1219px) {
+    .landwash-container {padding:0 15px}
+}
+
+.landwash-welcome {position:relative; padding:133px 0; background:url(../img/landwash-welcome-bg.jpg) no-repeat center; background-size:cover}
+.landwash-welcome::before {content:""; position:absolute; left:0; top:0; bottom:0; right:50%; margin-right:-222px; background:linear-gradient(90deg, #000000 -9.36%, rgba(0, 0, 0, 0.76) 49.46%, rgba(0, 0, 0, 0) 100%)}
+.landwash-welcome .landwash-container {position:relative}
+.landwash-welcome-title {max-width:485px; font-size:54px; line-height:70px; color:#FFFFFF}
+.landwash-welcome-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-welcome-text {max-width:400px; margin:30px 0 0 0; font-size:22px; line-height:29px; color:#FFFFFF}
+.landwash-welcome-links {margin:40px 0 0 0; display:flex}
+.landwash-welcome-links a {margin:0 0 0 20px; padding:14px 19px; border:1px solid #FFFFFF; border-radius:5px; font-size:16px; line-height:16px; color:#FFFFFF; text-decoration:none; transition:background 0.2s, color 0.2s}
+.landwash-welcome-links a:first-child {margin:0}
+.landwash-welcome-links a:hover {background:#FFFFFF; color:#001F39}
+
+@media (max-width:1219px) {
+    .landwash-welcome {padding:40px 0 334px 0; background:url(../img/landwash-welcome-bg-mobile.jpg) no-repeat center bottom; background-size:cover}
+    .landwash-welcome::before {bottom:auto; height:360px; right:0; margin-right:0; background:linear-gradient(180deg, #000000 -9.36%, rgba(0, 0, 0, 0.76) 49.46%, rgba(0, 0, 0, 0) 100%)}
+    .landwash-welcome-title {font-size:30px; line-height:39px}
+    .landwash-welcome-text {margin:15px 0 0 0; font-size:18px; line-height:23px}
+    .landwash-welcome-links {display:block}
+    .landwash-welcome-links a {display:block; margin:20px 0 0 0; padding:14px 0; text-align:center}
+}
+
+.landwash-menu {margin:20px 0 0 0}
+.landwash-menu-content {display:flex; align-items:center; justify-content:space-between; font-size:16px; line-height:21px}
+.landwash-menu-item a {color:#747474; text-decoration:none; transition:color 0.2s}
+.landwash-menu-item a:hover {color:#BB442A}
+.landwash-menu-sep {min-width:1px; max-width:1px; height:16px; background:#E8E7E2}
+
+@media (max-width:1219px) {
+    .landwash-menu {display:none}
+}
+
+.landwash-innovations {margin:100px 0 0 0}
+.landwash-innovations-title {text-align:center; font-size:48px; line-height:62px; color:#001F39}
+.landwash-innovations-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-innovations-anonce {max-width:680px; margin:20px auto 0 auto; font-size:20px; line-height:30px; color:#001F39; text-align:center}
+.landwash-innovations-list {margin:40px 0 0 0}
+.landwash-innovations-item {margin:40px 0 0 0; display:flex; align-items:center; justify-content:space-between}
+.landwash-innovations-item-photo {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+.landwash-innovations-item:nth-child(even) .landwash-innovations-item-photo {order:1}
+.landwash-innovations-item-photo img {display:block; width:100%}
+.landwash-innovations-item-content {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+.landwash-innovations-item-title {font-size:36px; line-height:47px; color:#001F39}
+.landwash-innovations-item-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-innovations-item-text {margin:20px 0 0 0; font-size:20px; line-height:30px; color:#001F39}
+.landwash-innovations-item-notice {margin:20px 0 0 0; font-size:18px; line-height:27px; color:#BFBFBF}
+
+@media (max-width:1219px) {
+    .landwash-innovations {margin:40px 0 0 0}
+    .landwash-innovations-title {text-align:left; font-size:30px; line-height:39px}
+    .landwash-innovations-title span {display:block}
+    .landwash-innovations-anonce {margin:15px 0 0 0; font-size:15px; line-height:23px; text-align:left}
+    .landwash-innovations-list {margin:25px 0 0 0}
+    .landwash-innovations-item {margin:25px 0 0 0; display:block}
+    .landwash-innovations-item-photo {min-width:0; max-width:none}
+    .landwash-innovations-item-content {min-width:0; max-width:none; margin:25px 0 0 0}
+    .landwash-innovations-item-title {font-size:24px; line-height:31px}
+    .landwash-innovations-item-text {margin:15px 0 0 0; font-size:15px; line-height:23px}
+    .landwash-innovations-item-notice {margin:15px 0 0 0; font-size:15px; line-height:23px}
+}
+
+.landwash-techs {margin:100px 0 0 0; padding:100px 0; background:#E8E7E2}
+.landwash-techs-title {text-align:center; font-size:48px; line-height:62px; color:#001F39}
+.landwash-techs-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-techs-anonce {margin:20px auto 0 auto; max-width:803px; text-align:center; font-size:20px; line-height:30px; color:#001F39}
+.landwash-techs-list {margin:40px 0 0 0; padding:0 0 40px 0; background:rgba(255, 255, 255, 0.5); border-radius:12px}
+.landwash-techs-list-header {padding:16px; background:#EDEDED; border-radius:12px; box-shadow:0px 16px 40px rgba(0, 0, 0, 0.25)}
+.landwash-techs-list-header-container {background:#000000; border-radius:8px; padding:36px 24px 24px 24px}
+.landwash-techs-list-header-logo svg {display:block; width:222px; height:24px; fill:#FFFFFF}
+.landwash-techs-list-header-ctrl {display:flex; align-items:center; justify-content:space-between; margin:36px 0 0 0}
+.landwash-techs-list-header-timer {min-width:141px; max-width:141px}
+.landwash-techs-list-header-timer svg {display:block; width:141px; height:50px; fill:#FFFFFF}
+.landwash-techs-list-header-playpause {min-width:120px; max-width:120px; margin:0 21px 0 0}
+.landwash-techs-list-header-playpause svg {display:block; width:120px; height:120px; fill:#FFFFFF}
+.landwash-techs-list-header-power {min-width:80px; max-width:80px}
+.landwash-techs-list-header-power svg {display:block; width:80px; height:80px; fill:#FFFFFF}
+.landwash-techs-list-header-items {margin:28px -4px 0 -4px; display:flex}
+.landwash-techs-list-header-item {display:flex; flex:1; margin:8px 4px 0 4px; height:88px; align-items:center; justify-content:center; text-align:center; background:#383737; border:2px solid #383737; color:#FFFFFF; font-size:16px; line-height:21px; cursor:pointer; transition:border-color 0.2s}
+.landwash-techs-list-header-item:hover,
+.landwash-techs-list-header-item.active {border-color:#BA4C33}
+.landwash-techs-list-tabs {position:relative; margin:40px 0 0 0; min-height:174px}
+.landwash-techs-list-tab {position:absolute; left:-9999px; top:-9999px; width:100%; opacity:0; transition:opacity 0.2s}
+.landwash-techs-list-tab.active {position:relative; left:auto; top:auto; opacity:1}
+.landwash-techs-list-tab-title {text-align:center; font-size:36px; line-height:47px; color:#001F39}
+.landwash-techs-list-tab-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-techs-list-tab-text {margin:20px auto 0 auto; max-width:590px; text-align:center; font-size:20px; line-height:30px; color:#001F39}
+.landwash-techs-list-tab-notice {margin:20px auto 0 auto; max-width:590px; text-align:center; font-size:18px; line-height:27px; color:#BFBFBF}
+.landwash-techs-programms {margin:100px 0 0 0; text-align:center}
+.landwash-techs-programms-title {font-size:36px; line-height:47px; color:#001F39}
+.landwash-techs-programms-title span {display:block; font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-techs-programms-list-inner.swiper-wrapper {margin:28px -5px 0 -5px; display:flex; flex-wrap:wrap; align-items:stretch; width:auto; height:auto}
+.landwash-techs-programms-item.swiper-slide {min-width:calc(25% - 10px); max-width:calc(25% - 10px); margin:10px 5px 0 5px; height:90px; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#BB442A; border-radius:6px; padding:0 12px; color:#FFFFFF}
+.landwash-techs-programms-item-title {font-weight:600; font-size:20px; line-height:26px}
+.landwash-techs-programms-item-text {margin:5px 0 0 0; font-size:12px; line-height:16px}
+
+@media (max-width:1219px) {
+    .landwash-techs {margin:60px 0 0 0; padding:40px 0}
+    .landwash-techs-title {font-size:30px; line-height:39px; text-align:left}
+    .landwash-techs-anonce {margin:20px 0 0 0; text-align:left; font-size:15px; line-height:23px}
+    .landwash-techs-list {margin:40px -15px 0 -15px}
+    .landwash-techs-list-header {padding:15px}
+    .landwash-techs-list-header-container {padding:30px 15px 15px 15px}
+    .landwash-techs-list-header-logo svg {width:154px; height:17px}
+    .landwash-techs-list-header-timer {min-width:88px; max-width:88px}
+    .landwash-techs-list-header-timer svg {width:88px; height:31px}
+    .landwash-techs-list-header-playpause {min-width:48px; max-width:48px; margin:0}
+    .landwash-techs-list-header-playpause svg {width:48px; height:48px}
+    .landwash-techs-list-header-power {min-width:48px; max-width:48px}
+    .landwash-techs-list-header-power svg {width:48px; height:48px}
+    .landwash-techs-list-header-items {flex-wrap:wrap}
+    .landwash-techs-list-header-item {min-width:calc(50% - 8px); max-width:calc(50% - 8px); height:auto; padding:14px 0; font-size:15px}
+    .landwash-techs-list-header-item.active {box-shadow:0px 0px 10px rgba(187, 68, 42, 0.8)}
+    .landwash-techs-list-tabs {min-height:214px; margin:40px 15px 0 15px}
+    .landwash-techs-list-tab-title {text-align:left; font-size:24px; line-height:31px}
+    .landwash-techs-list-tab-text {margin:20px 0 0 0; text-align:left}
+    .landwash-techs-list-tab-notice {margin:20px 0 0 0; text-align:left; font-size:15px; line-height:23px}
+    .landwash-techs-programms {margin:40px 0 0 0}
+    .landwash-techs-programms-title {text-align:left; font-size:24px; line-height:31px}
+    .landwash-techs-programms-list.swiper {margin:20px -15px 0 -15px; width:auto}
+    .landwash-techs-programms-list-inner.swiper-wrapper {margin:0; width:100%; height:100%; flex-wrap:nowrap}
+    .landwash-techs-programms-item.swiper-slide {min-width:150px; max-width:150px; margin:0 5px 0 0; height:122px; padding:16px 12px}
+    .landwash-techs-programms-item.swiper-slide:first-child {margin-left:15px}
+    .landwash-techs-programms-item.swiper-slide:last-child {margin-right:15px}
+    .landwash-techs-programms-list.swiper-horizontal>.swiper-scrollbar,
+    .landwash-techs-programms-list .swiper-scrollbar.swiper-scrollbar-horizontal {position:relative; left:auto; bottom:auto; right:auto; margin:20px 15px 0 15px; width:auto; height:2px; border-radius:2px; background:#D9D9D9}
+    .landwash-techs-programms-list .swiper-scrollbar-drag {background:#001F39; border-radius:2px}
+    .landwash-techs-programms-item-title {height:100%; font-size:15px; line-height:20px}
+}
+
+.landwash-eco {margin:100px 0 0 0}
+.landwash-eco-title {text-align:center; font-size:48px; line-height:62px; color:#001F39}
+.landwash-eco-anonce {max-width:803px; margin:20px auto 0 auto; font-size:20px; line-height:30px; color:#001F39; text-align:center}
+.landwash-eco-list {margin:40px 0 0 0}
+.landwash-eco-item {margin:40px 0 0 0; display:flex; align-items:center; justify-content:space-between}
+.landwash-eco-item-photo {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+.landwash-eco-item:nth-child(even) .landwash-eco-item-photo {order:1}
+.landwash-eco-item-photo img {display:block; width:100%}
+.landwash-eco-item-content {min-width:calc(50% - 20px); max-width:calc(50% - 20px)}
+.landwash-eco-item-title {font-size:36px; line-height:47px; color:#001F39}
+.landwash-eco-item-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-eco-item-text {margin:20px 0 0 0; font-size:20px; line-height:30px; color:#001F39}
+.landwash-eco-item-notice {margin:20px 0 0 0; font-size:18px; line-height:27px; color:#BFBFBF}
+
+@media (max-width:1219px) {
+    .landwash-eco {margin:60px 0 0 0}
+    .landwash-eco-title {text-align:left; font-size:30px; line-height:39px}
+    .landwash-eco-anonce {margin:15px 0 0 0; font-size:15px; line-height:23px; text-align:left}
+    .landwash-eco-item {display:block}
+    .landwash-eco-item-photo {min-width:0; max-width:none}
+    .landwash-eco-item-content {min-width:0; max-width:none; margin:25px 0 0 0}
+    .landwash-eco-item-title {font-size:24px; line-height:31px}
+    .landwash-eco-item-title br {display:none}
+    .landwash-eco-item-text {margin:15px 0 0 0; font-size:15px; line-height:23px}
+    .landwash-eco-item-notice {margin:15px 0 0 0; font-size:15px; line-height:23px}
+}
+
+.landwash-design {margin:100px 0 0 0}
+.landwash-design-title {text-align:center; font-size:48px; line-height:62px; color:#001F39}
+.landwash-design-title span {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-design-anonce {margin:20px 0 0 0; text-align:center; font-size:20px; line-height:30px; color:#001F39}
+.landwash-design-content {position:relative; height:959px; margin:40px 0 0 0}
+.landwash-design-content img {position:relative; left:50%; max-width:none; width:auto; height:959px; transform:translateX(-50%)}
+.landwash-design-hint {position:absolute; left:50%}
+.landwash-design-hint-panel {top:393px; margin-left:-343px}
+.landwash-design-hint-light {top:698px; margin-left:-297px}
+.landwash-design-hint-display {top:304px; margin-left:159px}
+.landwash-design-hint-switch {top:393px; margin-left:5px}
+.landwash-design-hint-color {top:725px; margin-left:146px}
+.landwash-design-hint-color span {display:block; width:24px; height:24px; border-radius:50%; margin:0 0 0 15px}
+.landwash-design-hint-color span+span {margin:0 0 0 10px}
+.landwash-design-hint-inner {padding:16px 20px; color:#FFFFFF; background:#BA4C33; font-size:16px; line-height:21px; white-space:nowrap; display:flex; align-items:center}
+.landwash-design-hint-panel .landwash-design-hint-inner {border-radius:12px 0 12px 12px}
+.landwash-design-hint-light .landwash-design-hint-inner {border-radius:12px 0 12px 12px}
+.landwash-design-hint-display .landwash-design-hint-inner {border-radius:12px 12px 12px 0}
+.landwash-design-hint-switch .landwash-design-hint-inner {border-radius:0 12px 12px 12px}
+.landwash-design-hint-color .landwash-design-hint-inner {border-radius:0 12px 12px 12px}
+
+@media (max-width:1219px) {
+    .landwash-design {margin:60px 0 0 0}
+    .landwash-design-title {text-align:left; font-size:30px; line-height:39px}
+    .landwash-design-anonce {margin:15px 0 0 0; text-align:left; font-size:15px; line-height:23px}
+    .landwash-design-content {height:367px; margin:25px 0 0 0}
+    .landwash-design-content img {height:367px}
+    .landwash-design-hint {width:40px; height:40px; border-radius:50%; background:rgba(255, 255, 255, 0.25); cursor:pointer; transition:background 0.2s}
+    .landwash-design-hint.open {background:rgba(186, 76, 51, 0.25); z-index:1}
+    .landwash-design-hint::before {content:""; position:absolute; left:8px; top:8px; width:24px; height:24px; border-radius:50%; background:rgba(255, 255, 255, 0.25); transition:background 0.2s}
+    .landwash-design-hint.open::before {background:rgba(186, 76, 51, 0.25)}
+    .landwash-design-hint::after {content:""; position:absolute; left:14px; top:14px; width:12px; height:12px; border-radius:50%; background:#FFFFFF; transition:background 0.2s}
+    .landwash-design-hint.open::after {background:#BA4C33}
+    .landwash-design-hint-panel {top:134px; margin-left:-57px}
+    .landwash-design-hint-light {top:220px; margin-left:-83px}
+    .landwash-design-hint-display {top:102px; margin-left:57px}
+    .landwash-design-hint-switch {top:134px; margin-left:15px}
+    .landwash-design-hint-color {top:260px; margin-left:57px}
+    .landwash-design-hint-inner {display:none; position:absolute; top:29px; padding:10px 16px; z-index:1}
+    .landwash-design-hint.open .landwash-design-hint-inner {display:flex}
+    .landwash-design-hint-panel .landwash-design-hint-inner {left:-60px; border-radius:6px 6px 6px 6px}
+    .landwash-design-hint-light .landwash-design-hint-inner {left:20px; border-radius:0 6px 6px 6px}
+    .landwash-design-hint-display .landwash-design-hint-inner {right:20px; border-radius:6px 0 6px 6px}
+    .landwash-design-hint-switch .landwash-design-hint-inner {right:-20px; border-radius:6px 6px 6px 6px}
+    .landwash-design-hint-color .landwash-design-hint-inner {right:20px; border-radius:6px 0 6px 6px}
+}
+
+.landwash-config {margin:160px 0 0 0}
+.landwash-config-logo {display:flex; justify-content:center}
+.landwash-config-logo svg {width:444px; height:48px; fill:#000000}
+.landwash-config-title {text-align:center; margin:80px 0 0 0; font-size:48px; line-height:62px; color:#001F39}
+.landwash-config-title span {display:block; font-family:SourceSerifPro, Arial, sans-serif; font-style:italic}
+.landwash-config-filter-link {display:none}
+.landwash-config-container {margin:40px 0 0 0; padding:40px 36px; display:flex; align-items:flex-start; justify-content:space-between; background:#E8E7E2; border-radius:16px}
+.landwash-config-filter {min-width:404px; max-width:404px}
+.landwash-config-filter-header {display:none}
+.landwash-config-filter-bottom {display:none}
+.landwash-config-results {width:100%; margin:0 0 0 60px; position:relative; overflow:hidden}
+
+@media (max-width:1219px) {
+    .landwash-config {margin:60px 0 0 0}
+    .landwash-config-logo {display:block}
+    .landwash-config-logo svg {width:210px; height:22px}
+    .landwash-config-title {text-align:left; margin:25px 0 0 0; font-size:30px; line-height:39px}
+    .landwash-config-container {padding:0; background:none; border-radius:0}
+    .landwash-config-filter-link {display:block; margin:25px 0 0 0}
+    .landwash-config-filter-link a {display:flex; align-items:center; justify-content:center; color:#FFFFFF; height:54px; border-radius:6px; background:#BA4C33; text-decoration:none; font-size:20px; line-height:20px}
+    .landwash-config-filter-link a svg {width:24px; height:24px; margin:0 10px 0 0; fill:#FFFFFF}
+    .landwash-config-filter {display:none}
+    .landwash-config-results {margin:0; background:#E8E7E2; padding-bottom:20px; border-radius:16px}
+
+    .landwash-config-filter-open,
+    .landwash-config-filter-open body {position:fixed; left:0; top:0; right:0; bottom:0; overflow:hidden}
+    .landwash-config-filter-open .landwash-config-filter {display:flex; flex-direction:column; position:fixed; left:0; top:0; right:0; bottom:0; padding:15px; z-index:9999; background:#FFFFFF; min-width:0; max-width:none}
+    .landwash-config-filter-header {min-height:31px; display:flex; align-items:center; justify-content:space-between}
+    .landwash-config-filter-title {font-size:24px; line-height:31px; color:#001F39}
+    .landwash-config-filter-close {width:24px}
+    .landwash-config-filter-close svg {width:24px; height:24px; fill:#001F39}
+    .landwash-config-filter-container {margin:15px 0 0 0; height:100%; position:relative; overflow:auto; border-top:1px solid #E8E7E2}
+    .landwash-config-filter-bottom {margin:15px 0; display:flex; align-items:center; justify-content:space-between}
+    a.landwash-config-filter-cancel {font-size:15px; line-height:23px; color:#BFBFBF; text-decoration:none}
+    a.landwash-config-filter-apply {padding:16px 24px; background:#BA4C33; font-size:20px; line-height:20px; border-radius:6px; color:#FFFFFF; text-decoration:none}
+}
+
+.landwash-config-list-item {min-width:100%; max-width:100%}
+.landwash-config-list-item-link {display:block; text-decoration:none; width:468px; margin:0 auto; background:#FFFFFF; border-radius:16px; padding:20px}
+a.landwash-config-list-item-link {text-decoration:none}
+.landwash-config-list-item-preview {height:358px; display:flex; align-items:center; justify-content:center; margin:40px 0 0 0}
+.landwash-config-list-item-preview img {display:block; width:auto; height:auto; max-width:100%; max-height:100%}
+.landwash-config-list-item-title {margin:20px 0 0 0; font-size:14px; line-height:18px; color:#BB442A; text-align:center}
+.landwash-config-list-item-detail {margin:20px 0 0 0}
+.landwash-config-list-item-detail span {display:block; text-align:center; padding:15px 0; font-weight:normal; font-size:20px; line-height:20px; background:#BA4C33; border-radius:6px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
+.landwash-config-list-item-link:hover .landwash-config-list-item-detail span {background:#1C1B1F; text-decoration:none}
+.landwash-config-list-item-placeholder-title {margin:20px 0 0 0; font-size:18px; line-height:18px; color:#000000; text-align:center}
+.landwash-config-list-item-placeholder-text {margin:10px 0 0 0; font-family:SourceSerifPro, Arial, sans-serif; font-style:italic; font-size:16px; line-height:21px; color:#000000; text-align:center}
+.landwash-config-list .swiper-button-prev,
+.landwash-config-list .swiper-button-next {position:absolute; z-index:2; top:50%; width:48px; height:48px; border:none; border-radius:0; margin:-24px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; opacity:1}
+.landwash-config-list .swiper-button-prev::after,
+.landwash-config-list .swiper-button-next::after {display:none}
+.landwash-config-list .swiper-button-prev {left:0}
+.landwash-config-list .swiper-button-next {right:0}
+.landwash-config-list .swiper-button-prev svg,
+.landwash-config-list .swiper-button-next svg {display:block; width:48px; height:48px; fill:#BB442A; transition:fill 0.2s}
+.landwash-config-list .swiper-button-prev:hover svg,
+.landwash-config-list .swiper-button-next:hover svg {fill:#1C1B1F}
+.landwash-config-list.swiper-horizontal > .swiper-pagination-bullets,
+.landwash-config-list.swiper-pagination-bullets.swiper-pagination-horizontal,
+.landwash-config-list .swiper-pagination-custom,
+.landwash-config-list .swiper-pagination-fraction {width:488px; margin:30px auto 0 auto; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:relative; left:auto; top:auto; right:auto; bottom:auto; display:flex; justify-content:center}
+.landwash-config-list.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.landwash-config-list.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {width:100%; flex:1; height:3px; margin:0 10px; background:rgba(255, 255, 255, 0.5); border:none; position:relative; border-radius:2px; opacity:1; transition:background 0.2s}
+.landwash-config-list.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover,
+.landwash-config-list.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:hover {background:#BA4C33}
+.landwash-config-list.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active,
+.landwash-config-list.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {background:#BA4C33}
+.landwash-config-list.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::before,
+.landwash-config-list.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet::before {content:""; position:absolute; left:0; top:-10px; right:0; bottom:-10px; background:transparent}
+
+@media (max-width:1219px) {
+    .landwash-config-list {min-height:440px}
+    .landwash-config-list-item-link {width:auto; background:none}
+    .landwash-config-list-item-preview {width:244px; height:308px; margin:0 auto}
+    .landwash-config-list-item-title {font-size:15px; line-height:20px; margin:0 15px}
+    .landwash-config-list-item-placeholder-title {font-size:18px; line-height:23px}
+    .landwash-config-list-item-preview-placeholder img {width:192px}
+    .landwash-config-list .swiper-button-prev,
+    .landwash-config-list .swiper-button-next {width:30px; height:30px; top:174px; margin:-15px 0 0 0}
+    .landwash-config-list .swiper-button-prev {left:10px}
+    .landwash-config-list .swiper-button-next {right:10px}
+    .landwash-config-list .swiper-button-prev svg,
+    .landwash-config-list .swiper-button-next svg {width:30px; height:30px}
+    .landwash-config-list.swiper-horizontal > .swiper-pagination-bullets,
+    .landwash-config-list.swiper-pagination-bullets.swiper-pagination-horizontal,
+    .landwash-config-list .swiper-pagination-custom,
+    .landwash-config-list .swiper-pagination-fraction {width:auto; margin:10px 15px 0 15px}
+    .landwash-config-list.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .landwash-config-list.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin:0 5px}
+}
+
+.landwash-config-filter-block {margin:30px 0 0 0; position:relative}
+.landwash-config-filter-block:first-child {margin:0}
+.landwash-config-filter-block-title {font-size:20px; line-height:28px; color:#747474; position:relative}
+.landwash-config-filter-block-checkboxes {margin:10px 0 0 -30px; display:flex}
+.landwash-config-filter-block-checkboxes label {display:block; cursor:pointer; margin:0 0 0 30px}
+.landwash-config-filter-block-checkboxes label input {display:none}
+.landwash-config-filter-block-checkboxes label span {display:block; position:relative; padding:0 0 0 32px; font-size:20px; line-height:30px; color:#747474; transition:color 0.2s}
+.landwash-config-filter-block-checkboxes label:hover span {color:#000000}
+.landwash-config-filter-block-checkboxes label input:checked+span {color:#000000}
+.landwash-config-filter-block-checkboxes label span::before {content:""; position:absolute; left:0; top:3px; width:24px; height:24px; border:1px solid #BFBFBF; border-radius:3px; background:url(../img/landwash-config-checkbox.svg) no-repeat -9999px -9999px; transition:background-color 0.2s, border-color 0.2s}
+.landwash-config-filter-block-checkboxes label input:checked+span::before {border-color:#BA4C33; background-color:#BA4C33; background-position:center}
+.landwash-config-filter-block-checkboxes label span em {font-family:SourceSerifPro, Arial, sans-serif; font-style:italic; border-bottom:1px dashed #747474; cursor:pointer; transition:color 0.2s, border-color 0.2s; position:relative}
+.landwash-config-filter-block-checkboxes label span em:hover {color:#BC4429; border-bottom-color:#BC4429}
+.landwash-config-filter-block-checkboxes label span em::before {content:attr(data-text); display:none; position:absolute; left:0; bottom:100%; margin-bottom:9px; width:265px; padding:10px; border-radius:6px; background:#FFFFFF; box-shadow:0px 0px 20px rgba(0, 0, 0, 0.08); font-style:normal; font-size:12px; line-height:18px; color:#001F39}
+.landwash-config-filter-block-checkboxes label span em::after {content:""; display:none; position:absolute; left:29px; bottom:100%; margin-bottom:-10px; width:14px; padding:12px; background:url(../img/landwash-config-filter-block-title.svg) no-repeat}
+.landwash-config-filter-block-checkboxes label span em:hover::before,
+.landwash-config-filter-block-checkboxes label span em:hover::after {display:block}
+.landwash-config-filter-block-radios {margin:10px 0 0 -30px; display:flex}
+.landwash-config-filter-block-radios label {display:block; cursor:pointer; margin:0 0 0 30px}
+.landwash-config-filter-block-radios label input {display:none}
+.landwash-config-filter-block-radios label span {display:block; position:relative; padding:0 0 0 32px; font-size:20px; line-height:30px; color:#747474; transition:color 0.2s}
+.landwash-config-filter-block-radios label:hover span {color:#000000}
+.landwash-config-filter-block-radios label input:checked+span {color:#000000}
+.landwash-config-filter-block-radios label span::before {content:""; position:absolute; left:0; top:3px; width:24px; height:24px; border:1px solid #BFBFBF; border-radius:50%; transition:border-color 0.2s}
+.landwash-config-filter-block-radios label input:checked+span::before {border-color:#BA4C33}
+.landwash-config-filter-block-radios label span::after {content:""; position:absolute; left:5px; top:8px; width:14px; height:14px; border-radius:50%; transition:background 0.2s}
+.landwash-config-filter-block-radios label input:checked+span::after {background:#BA4C33}
+.landwash-config-filter-slider .landwash-config-slider {position:relative; margin:55px 0 36px 0; width:241px}
+.landwash-config-filter-slider .landwash-config-slider-range {position:relative; height:4px; background:#F7F7F7}
+.landwash-config-filter-slider .landwash-config-slider-range-inner {position:relative}
+.landwash-config-filter-slider .noUi-target {background:#F7F7F7; border:none; box-shadow:none; border-radius:0}
+.landwash-config-filter-slider .noUi-horizontal {height:4px}
+.landwash-config-filter-slider .noUi-connects {border-radius:0}
+.landwash-config-filter-slider .noUi-connect {background:#BA4C33}
+.landwash-config-filter-slider .noUi-horizontal .noUi-handle {width:16px; height:16px; right:-8px; top:-6px; border:1px solid #FFFFFF; border-radius:50%; box-shadow:none; background:#BA4C33}
+.landwash-config-filter-slider .noUi-handle::before {width:4px; height:4px; background:#FFFFFF; border-radius:50%; left:5px; top:5px}
+.landwash-config-filter-slider .noUi-handle::after {display:none}
+.landwash-config-filter-slider .noUi-horizontal .noUi-tooltip {border:none; bottom:21px; border-radius:3px; padding:0; width:50px; height:34px; color:#FFFFFF; background:#BA4C33; font-size:20px; line-height:34px; text-align:center}
+.landwash-config-filter-slider .noUi-horizontal .noUi-tooltip::before {content:""; position:absolute; left:50%; bottom:-3px; width:6px; height:5px; margin:0 0 0 -3px; background:url(../img/landwash-config-filter-slider-tooltip.svg) no-repeat}
+.landwash-config-filter-slider .landwash-config-slider-params {display:none}
+
+@media (max-width:1219px) {
+    .landwash-config-filter-block {margin:0; border-bottom:1px solid #E8E7E2; padding:15px 0}
+    .landwash-config-filter-slider .landwash-config-slider {margin-bottom:0; margin-left:auto; margin-right:auto}
+    .landwash-config-filter-block-title {font-size:15px; line-height:21px; color:#001F39}
+    .landwash-config-filter-block-checkboxes label span {font-size:15px; line-height:21px; color:#001F39; padding:0 0 0 30px}
+    .landwash-config-filter-block-checkboxes label span::before {top:0; width:20px; height:20px}
+    .landwash-config-filter-block-radios label span {font-size:15px; line-height:21px; color:#001F39; padding:0 0 0 30px}
+    .landwash-config-filter-block-radios label span::before {top:0; width:20px; height:20px}
+    .landwash-config-filter-block-radios label span::after {left:5px; top:5px; width:10px; height:10px}
+    .landwash-config-filter-block-checkboxes label span em::before {position:fixed; left:50%; bottom:auto; top:50%; margin-bottom:0; transform:translate(-50%, -50%); z-index:99999}
+    .landwash-config-filter-block-checkboxes label span em::after {position:fixed; left:0; top:0; right:0; bottom:0; margin:0; width:auto; height:auto; z-index:99998; background:rgba(255, 255, 255, 0.6); pointer-events:none}
+}
+
+.landwash-products {margin:106px 0 0 0}
+.landwash-products-title {font-size:36px; line-height:47px; color:#001F39}
+.landwash-products-content {position:relative; margin:40px 28px 0 28px}
+.landwash-products-list,
+.landwash-products-list.swiper {margin:0}
+.landwash-products-list-inner {display:flex; position:relative}
+.landwash-products-list-item {min-width:25%; max-width:25%; padding:0 10px}
+.landwash-products-list-item-inner {background:#E7E6E1; border-radius:16px; padding:20px}
+.landwash-products-list-item-link {display:block; color:#BB442A; text-decoration:none; transition:color 0.2s}
+.landwash-products-list-item-link:hover {color:#001F39; text-decoration:none}
+.landwash-products-list-item-preview {height:250px; display:flex; align-items:center; justify-content:center}
+.landwash-products-list-item-preview img {display:block; max-width:100%; max-height:100%}
+.landwash-products-list-item-title {margin:10px 0 0 0; font-size:14px; line-height:18px; text-align:center}
+.landwash-products-list-item-detail {margin:20px 0 0 0}
+.landwash-products-list-item-detail span {display:block; text-align:center; padding:15px 36px; font-weight:normal; font-size:20px; line-height:20px; background:#BA4C33; border-radius:6px; color:#FFFFFF; text-decoration:none; transition:background 0.2s}
+.landwash-products-list-item-link:hover .landwash-products-list-item-detail span {background:#1C1B1F; text-decoration:none}
+.landwash-products-content .swiper-button-prev,
+.landwash-products-content .swiper-button-next {position:absolute; z-index:2; top:50%; width:48px; height:48px; border:none; border-radius:50%; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent; transform:translateY(-50%); opacity:1}
+.landwash-products-content .swiper-button-prev::after,
+.landwash-products-content .swiper-button-next::after {display:none}
+.landwash-products-content .swiper-button-prev {left:-28px}
+.landwash-products-content .swiper-button-next {right:-28px}
+.landwash-products-content .swiper-button-prev svg,
+.landwash-products-content .swiper-button-next svg {display:block; width:48px; height:48px; fill:#BB442A; transition:fill 0.2s}
+.landwash-products-content .swiper-button-prev:hover svg,
+.landwash-products-content .swiper-button-next:hover svg {fill:#001F39}
+
+@media (max-width:1219px) {
+    .landwash-products {margin:60px 0 0 0}
+    .landwash-products-title {text-align:center; font-size:24px; line-height:31px}
+    .landwash-products-content {margin:25px 20px 0 20px}
+    .landwash-products-list-item {min-width:100%; max-width:100%; padding:0}
+    .landwash-products-list-item-title {margin:0}
+    .landwash-products-content .swiper-button-prev,
+    .landwash-products-content .swiper-button-next {width:20px; height:20px}
+    .landwash-products-content .swiper-button-prev {left:-20px}
+    .landwash-products-content .swiper-button-next {right:-20px}
+    .landwash-products-content .swiper-button-prev svg,
+    .landwash-products-content .swiper-button-next svg {width:20px; height:20px}
+}
